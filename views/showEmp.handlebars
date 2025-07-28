@@ -1,0 +1,22 @@
+<table class="table table-hover container">
+  <thead>
+    <tr>
+      <th scope="col" class="table-dark">Name</th>
+      <th scope="col" class="table-dark">Email</th>
+      <th scope="col" class="table-dark">Phone</th>
+      <th scope="col" class="table-dark">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each list}}
+  <tr class="table-active">
+    <td scope="row" class="table-info">{{name}}</td>
+    <td class="table-danger">{{email}}</td>
+    <td>{{phone}}</td>
+    <td class="table-success">{{city}}</td>
+  </tr>
+{{/each}}
+
+   
+  </tbody>
+</table>
