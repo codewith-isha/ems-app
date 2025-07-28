@@ -1,0 +1,59 @@
+<div class="container mt-5">
+  <h1>Add Employee</h1>
+  <form action="/emp/save-emp" class="mt-3" method="post">
+    <fieldset class="mt-3">
+      <label class="form-label" for="disabledInput">Enter your Name</label>
+      <input
+        class="form-control"
+        id="disabledInput"
+        type="text"
+        placeholder="Enter Your name here..."
+        required
+        name = "name"
+       
+      />
+    </fieldset>
+
+    <fieldset class="mt-3">
+      <label class="form-label" for="disabledInput">Enter your Email</label>
+      <input
+        class="form-control"
+        id="disabledInput"
+        type="email"
+        placeholder="Enter your Email here..."
+         required
+        name ="email"
+     
+      />
+    </fieldset>
+
+    <fieldset class="mt-3">
+      <label class="form-label" for="disabledInput">Phone Number</label>
+      <input
+        class="form-control"
+        id="disabledInput"
+        type="number"
+        placeholder="Enter your Phone here..."
+         required
+         name ="phone"
+      />
+    </fieldset>
+
+    <fieldset class="mt-3">
+      <label class="form-label" for="disabledInput">Enter Your City</label>
+      <input
+        class="form-control"
+        id="disabledInput"
+        type="text"
+        placeholder="Enter your city here..."
+         required
+         name ="city"
+         maxlength="20"
+        
+      />
+    </fieldset>
+
+    <input type="submit" value="Add Employee" class="btn btn-success mt-3 rounded">
+
+  </form>
+</div>
