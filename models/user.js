@@ -12,5 +12,8 @@ const userSchema= new mongoose.Schema({
    city:{
     type:String
   },
+  class:{
+    type:String
+  }
 })
 module.exports = mongoose.model('User',userSchema)

@@ -1,0 +1,15 @@
+<form action="/emp/final-update/{{user._id}}" method="post">
+  <label for="name">Name</label>
+  <input type="text" name="name" value="{{this.name}}" placeholder="Enter name" required>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" value="{{this.email}}" placeholder="Enter email" required>
+
+  <label for="phone">Phone</label>
+  <input type="text" name="phone" value="{{this.phone}}" placeholder="Enter phone" required>
+
+  <label for="city">City</label>
+  <input type="text" name="city" value="{{this.city}}" placeholder="Enter city" required>
+
+  <button type="submit">Update</button>
+</form>
