@@ -53,7 +53,7 @@ router.get('/final-delete/:userId' ,async (req,res)=>{
   try{
     const result= await Employee.findByIdAndDelete(req.params.userId)
     // console.log(result)
-    res.redirect('/emp')
+    res.redirect('/emp/show-all-employee')
 
   }catch(error){
     console.log(`Error : ${error}`)
@@ -80,7 +80,7 @@ router.post('/final-update/:userId', async (req, res) => {
   try {
     const result = await Employee.findByIdAndUpdate(req.params.userId, req.body);
     // console.log(result);
-    res.redirect('/emp');
+    res.redirect('/emp/show-all-employee');
   } catch (error) {
     console.log(`Error : ${error}`);
   }

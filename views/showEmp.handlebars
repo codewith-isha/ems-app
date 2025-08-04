@@ -1,45 +1,25 @@
-{{!-- <table class="table table-hover container">
+
+
+
+<table class="table table-hover container">
   <thead>
     <tr>
-      <th scope="col" class="table-dark">Name</th>
-      <th scope="col" class="table-dark">Email</th>
-      <th scope="col" class="table-dark">Phone</th>
-      <th scope="col" class="table-dark">City</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each list}}
-  <tr class="table-active">
-    <td scope="row" class="table-info">{{name}}</td>
-    <td class="table-danger">{{email}}</td>
-    <td>{{phone}}</td>
-    <td class="table-success">{{city}}</td>
-  </tr>
-{{/each}}
-
-   
-  </tbody>
-</table> --}}
-
-
-<table class="table container table-bordered mt-4">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>City</th>
+      <th scope="col"class="table-dark">Name</th>
+      <th  scope="col"class="table-dark">Email</th>
+      <th  scope="col"class="table-dark">Phone</th>
+      <th  scope="col"class="table-dark">City</th>
    
     </tr>
   </thead>
   <tbody>
     {{#each list}}
-    <tr>
-      <td>{{name}}</td>
-      <td>{{email}}</td>
-      <td>{{phone}}</td>
-      <td>{{city}}</td>
+    <tr class="table-active">
+      <td scope="row" class="table-info">{{name}}</td>
+      <td class="table-danger">{{email}}</td>
+      <td class="table-success">{{phone}}</td>
+      <td class="table-danger">{{city}}</td>
     </tr>
     {{/each}}
   </tbody>
 </table>
+<center> <a href="/emp" class="btn btn-danger mt-3 rounded ">Home</a></center>

@@ -10,15 +10,20 @@
   </thead>
   <tbody>
     {{#each list}}
-  <tr class="table-active">
-    <td scope="row" class="table-info">{{name}}</td>
-    <td class="table-danger">{{email}}</td>
-    <td>{{phone}}</td>
-    <td class="table-success">{{city}}</td>
-    <td class="table-danger"><a href="/emp/info/{{this.id}}" class="btn btn-warning">Update</a></td>
-  </tr>
-{{/each}}
+      <tr class="table-active">
+        <td scope="row" class="table-info">{{name}}</td>
+        <td class="table-danger">{{email}}</td>
+        <td>{{phone}}</td>
+        <td class="table-success">{{city}}</td>
+        <td class="table-danger"><a
+            href="/emp/info/{{this.id}}"
+            class="btn btn-warning rounded"
+            
+          >Update</a></td>
+      </tr>
+    {{/each}}
 
-   
   </tbody>
+
 </table>
+<center> <a href="/emp" class="btn btn-danger mt-3 rounded">Home</a></center>
