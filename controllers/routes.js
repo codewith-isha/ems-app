@@ -4,12 +4,14 @@ const Employee = require('../models/user')
 router.get("/" , (req ,res)=>{
   res.render("home")
 })
+
+// adding new user 
+
 router.get('/create-user',(req, res)=>{
   res.render("addEmp") 
-  // res.end()
+
 })
 router.post('/save-emp',async(req,res)=>{
-  // console.log(req.body)
   try{
     const employee = new Employee({
       name:req.body.name,
@@ -17,17 +19,14 @@ router.post('/save-emp',async(req,res)=>{
       phone:req.body.phone,
       city:req.body.city,
     })
-   
     await employee.save();
     res.redirect('/emp/show-all-employee');
   }catch(error){
    console.log("Error", error)
   }
-
-  
 })
 
-
+// show all user 
 
 router.get("/show-all-employee",async(req,res)=>{
   try{
@@ -40,6 +39,7 @@ router.get("/show-all-employee",async(req,res)=>{
 })
 
 // delete user 
+
 router.get("/delete-all-employee", async(req, res)=>{
   try {
     const result = await Employee.find()
@@ -62,6 +62,7 @@ router.get('/final-delete/:userId' ,async (req,res)=>{
 
 
 // update user 
+
 router.get('/update-all-employee', async (req,res)=>{
    try {
     const result = await Employee.find()
